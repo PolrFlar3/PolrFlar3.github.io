@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+html {
+  background-color: #222;
+}
+
+body {
+  margin: 1em auto;
+  max-width: 800px;
+}
+
+.settings > * {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+#cubemap {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  border: none;
+  background: #222;
+  margin-top: 15px;
+}
+
+#imageInput {
+  display: none;
+}
+
+.settings {
+  display: none;
+}
+
+.rotation {
+  display: none;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

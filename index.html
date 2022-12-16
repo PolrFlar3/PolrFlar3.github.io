@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cubemap[COMPILER]</title>
+  <link href="hud.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <section>
+      <input id="imageInput" type="file" accept="image/*">
+    </section>
+    <section class="settings">
+      <h2>Settings</h2>
+      <div class="rotation">
+        <label>Cube Rotation: <input id="cubeRotation" type="number" min="0" max="359" value="180">°</label>
+      </div>
+      <fieldset title="The resampling algorithm to use when generating the cubemap.">
+        <label><input type="radio" name="interpolation" value="lanczos" checked></label>
+        <label><input type="radio" name="interpolation" value="cubic"></label>
+        <label><input type="radio" name="interpolation" value="linear"></label>
+      </fieldset>
+      <fieldset>
+        <label><input type="radio" name="format" value="png" checked>PNG</label>
+        <label><input type="radio" name="format" value="jpg">JPEG</label>
+      </fieldset>
+    </section>
+    <section>
+      <div id="cubemap">
+        <b id="generating" style="visibility:hidden">Generating...</b>
+        <output id="faces"></output>
+      </div>
+    </section>
+  </main>
+  <script src="index.js" type="text/javascript"></script>
+  <script>
+  </script>
+</body>
+</html>
